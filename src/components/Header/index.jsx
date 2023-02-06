@@ -13,7 +13,7 @@ const Header = () => {
             <header className="header">
                 <div className="header-top">
                     <div className="header-left">
-                        <h1>48h</h1>
+                        <h1>48</h1>
                     </div>
                     <div className="header-center">
                         <input type="text" placeholder="Search" className="search-bar"/>
