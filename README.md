@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Fonctionnalité de la partie front
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ### Fonctionnalités actuellement développées
 
-## Available Scripts
 
-In the project directory, you can run:
+Le site est fonctionnel en partie, il est possible de créer un compte utilisateur à l'aide d'un formulaire, nous pouvons ensuite nous connecter en nous authentifiant auprès de la base de données, et nous diriger sur plusieurs pages.
 
-### `npm start`
+Nous pouvons afficher des articles et les catégories d'article.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Pour cela nous avez on eut besoin d'utiliser différentes librairies :
 
-### `npm test`
+- axios : il permet de réaliser les appels api pour récupérer les données et d'en envoyer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- react-router-dom : librairie react dédiée au rooting des applications
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Au niveau front et plutôt design nous avons créé plusieurs composants permettant d'être réutilisés dans différentes partie du site. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Une bonne partie du temps fut consacré à la transmission de connaissance, étape nécessaire pour avancer ensemble sans délaissé certains membres de l'équipe.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ### Fonctionnalités envisagées
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sur un plus long terme nous aurions pu finir la partie client avec la possibilité d'ajouter des produits et de valider son panier. La possibilité de garder en mémoire les paniers non validés entre les connexions. Nous aurions aussi mis en place un système de commentaires pour que les clients puissent évaluer les articles commandés.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nous avions aussi commencé à mettre en place un espace de dashboard pour la partie commerçant ou administrateur de l'instance. Partie du site accessible par l'authentification en tant qu'administrateur pour accéder à la gestion des données, l'ajout de produit, la modification des stocks, le suivi des ventes, les connexions avec les autres instances...
