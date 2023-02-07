@@ -14,7 +14,7 @@ const Header = () => {
             <header className="header">
                 <div className="header-top">
                     <div className="header-left">
-                        <h1>48H</h1>
+                        <Link to="/">48h Challenge</Link>
                     </div>
                     <div className="header-center">
                         <input type="text" placeholder="Search" className="search-bar"/>
@@ -35,9 +35,6 @@ const Header = () => {
             </header>
             <div className={ menu ? "side-menu active" : "side-menu"}>
                 <ul className="side-menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>

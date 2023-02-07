@@ -1,16 +1,12 @@
 import React from "react";
+import Header from "../Header";
+import WrappedGalery from "../WrappedGalery";
 
 const Galery = ({data}) => {
     return (
-        <div className="galery">
-            {data.map((item, index) => {
-                return (
-                    <div key={index}>
-                        <img src={item} alt="" />
-                    </div>
-                );
-            }
-            )}
+        <div>
+            <Header />
+            <WrappedGalery />
         </div>
     );
 };
