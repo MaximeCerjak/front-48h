@@ -1,10 +1,9 @@
 .card {
     background-color: rgb(207, 197, 197);
     border-radius: 10px;
-    height: 40vh;
+    height: 27vh;
     width: 20vw;
     border: 2px black solid;
-
 }
 
 h1 {
@@ -26,7 +25,14 @@ h3 {
     justify-content: center;
 }
 
-img {
+.categoryImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.centerImg {
     display: flex;
     align-items: center;
     justify-content: center;
