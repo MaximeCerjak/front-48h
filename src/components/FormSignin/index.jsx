@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import logo from "../../public/logo.png";
 import Header from "../Header";
+import { useNavigate } from "react-router-dom";
 import axios  from "axios";
 
 const FormSignin = () => {
+    const navigate = useNavigate()
 
     const [name, setName]=useState("")
     const [surname, setSurname]=useState("")
@@ -48,8 +50,6 @@ const FormSignin = () => {
             return
         }
 
-        console.log(name, surname, address, phone, mail, password, againPassword)
-
         axios.post("http://localhost:5000/api/users/register", {
             firstname: name,
             lastname: surname,
@@ -59,6 +59,7 @@ const FormSignin = () => {
             password: password
         })
         .then((res) => {
+            navigate('/connect')
             console.log(res)
         })
         .catch((err) => {
@@ -78,10 +79,10 @@ const FormSignin = () => {
                     <input id= "address" type="text" value={address} placeholder="Adresse" onChange={handleChangeAddress}/>
                     <input id= "phone" type="text" value={phone} placeholder="Téléphone" onChange={handleChangePhone}/>
                     <input id= "mail" type="text" value={mail} placeholder="Mail" onChange={handleChangeMail}/>
-                    <input id= "password" type="text" value={password} placeholder="Mot de passe" onChange={handleChangePassword}/>
-                    <input id= "" type="text" value={againPassword} placeholder="Vérification mot de passe" onChange={handleChangeAgainPassword}/>
+                    <input id= "password" type="password" value={password} placeholder="Mot de passe" onChange={handleChangePassword}/>
+                    <input id= "" type="password" value={againPassword} placeholder="Vérification mot de passe" onChange={handleChangeAgainPassword}/>
                 </div>
-                <button className="button1" type="submit" value="Send">
+                <button className="button1" type="submit" value="Send" onClick={handleSubmit}>
                     Valider
                 </button>
             </form>
