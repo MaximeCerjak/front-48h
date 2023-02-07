@@ -196,16 +196,9 @@ button:hover {
   /* display: flex; */
 }
 
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 500px;
+/* .carousel {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+} */
 
 /****************************** Formulaire*/
 
@@ -284,4 +277,16 @@ button:hover {
 .logodiv {
   margin: 0 auto;
   width: 20%;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  /* width: 100%; */
+  /* background-color: red; */
 }
