@@ -26,7 +26,7 @@ const Connect = () => {
                     <input id= "mail" type="text" value={mail} placeholder="Mail" onChange={handleChangeMail}/>
                     <input id= "password" type="text" value={password} placeholder="Mot de passe" onChange={handleChangePassword}/>
                 </div>
-                <button type="submit" value="To log in" >
+                <button className="button1" type="submit" value="To log in" >
                     Se connecter
                 </button>
             </form>

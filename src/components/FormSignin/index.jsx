@@ -73,16 +73,16 @@ const FormSignin = () => {
             <form className="addsign" onSubmit={handleSubmit}>
                 <img className="logo1" src={logo} alt="logo"/>
                 <div className="signin">
-                    <input id= "name" type="text" value={name} placeholder="Name" onChange={handleChangeName}/>
-                    <input id= "surname" type="text" value={surname} placeholder="Surname" onChange={handleChangeSurname}/>
-                    <input id= "address" type="text" value={address} placeholder="Address" onChange={handleChangeAddress}/>
-                    <input id= "phone" type="text" value={phone} placeholder="Phone" onChange={handleChangePhone}/>
+                    <input id= "name" type="text" value={name} placeholder="Prénom" onChange={handleChangeName}/>
+                    <input id= "surname" type="text" value={surname} placeholder="Nom de famille" onChange={handleChangeSurname}/>
+                    <input id= "address" type="text" value={address} placeholder="Adresse" onChange={handleChangeAddress}/>
+                    <input id= "phone" type="text" value={phone} placeholder="Téléphone" onChange={handleChangePhone}/>
                     <input id= "mail" type="text" value={mail} placeholder="Mail" onChange={handleChangeMail}/>
-                    <input id= "password" type="text" value={password} placeholder="Password" onChange={handleChangePassword}/>
-                    <input id= "" type="text" value={againPassword} placeholder="Again Password" onChange={handleChangeAgainPassword}/>
+                    <input id= "password" type="text" value={password} placeholder="Mot de passe" onChange={handleChangePassword}/>
+                    <input id= "" type="text" value={againPassword} placeholder="Vérification mot de passe" onChange={handleChangeAgainPassword}/>
                 </div>
                 <button className="button1" type="submit" value="Send">
-                    Send
+                    Valider
                 </button>
             </form>
         </div>
