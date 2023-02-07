@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import cadi from "../../public/cadi.png"
+import cadi from "../../public/cadi.png";
+import logo from "../../public/logo.png";
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
@@ -17,13 +18,13 @@ const Header = () => {
             <header className="header">
                 <div className="header-top">
                     <div className="header-left">
-                        <Link to="/">48h Challenge</Link>
+                        <Link to="/"> <img className="logo3" src={logo} alt=""/> </Link>
                     </div>
                     <div className="header-center">
                         <input type="text" placeholder="Search" className="search-bar"/>
                     </div>
                     <div className="header-right">
-                        <Link to="/signin">Signin</Link>
+                        <button className="button-SignIn"><Link className="button-SignIn1" to="/signin">Sign in</Link></button> 
                         <button className="bg-b">Sign up</button>
                     </div>
                 </div>
