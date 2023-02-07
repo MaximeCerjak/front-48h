@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import logo from "../../public/logo.png";
 
-const AddSignin = () => {
+const FormSignin = () => {
 
     const [name, setName]=useState("")
     const [surname, setSurname]=useState("")
@@ -41,15 +41,15 @@ const AddSignin = () => {
 
     return (
         <form className="addsign">
-            <img className="logo1" src={logo} />
+            <img className="logo1" src={logo} alt="logo"/>
             <div className="signin">
-                 <input id= "name" type="text" value={name} placeholder="Name" onChange={handleChangeName}/>
-                 <input id= "surname" type="text" value={surname} placeholder="Surname" onChange={handleChangeSurname}/>
-                 <input id= "address" type="text" value={address} placeholder="Address" onChange={handleChangeAddress}/>
-                 <input id= "phone" type="text" value={phone} placeholder="Phone" onChange={handleChangePhone}/>
-                 <input id= "mail" type="text" value={mail} placeholder="Mail" onChange={handleChangeMail}/>
-                 <input id= "password" type="text" value={password} placeholder="Password" onChange={handleChangePassword}/>
-                 <input id= "" type="text" value={againPassword} placeholder="Again Password" onChange={handleChangeAgainPassword}/>
+                <input id= "name" type="text" value={name} placeholder="Name" onChange={handleChangeName}/>
+                <input id= "surname" type="text" value={surname} placeholder="Surname" onChange={handleChangeSurname}/>
+                <input id= "address" type="text" value={address} placeholder="Address" onChange={handleChangeAddress}/>
+                <input id= "phone" type="text" value={phone} placeholder="Phone" onChange={handleChangePhone}/>
+                <input id= "mail" type="text" value={mail} placeholder="Mail" onChange={handleChangeMail}/>
+                <input id= "password" type="text" value={password} placeholder="Password" onChange={handleChangePassword}/>
+                <input id= "" type="text" value={againPassword} placeholder="Again Password" onChange={handleChangeAgainPassword}/>
             </div>
             <button type="submit" value="Send" >
                 Send
@@ -58,4 +58,4 @@ const AddSignin = () => {
     );
 }
 
-export default AddSignin;
+export default FormSignin;
