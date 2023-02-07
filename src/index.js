@@ -14,13 +14,14 @@ import Footer from './components/Footer';
 import Connect from './components/Connect';
 import FormSignin from './components/FormSignin';
 import CGV from './components/CGV'
+import NotFoud404 from './components/404';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Home />} />
       <Route path="dashboard" element={<Dashboard />} />
-      <Route path="*" element={<h1>404</h1>} />
+      <Route path="*" element={<NotFoud404 />} />
       <Route path="connect" element={<Connect />} />
       <Route path="signin" element={<FormSignin />} />
     </>
@@ -33,7 +34,6 @@ root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <Footer />
-    <CGV />
   </React.StrictMode>
 );
 
