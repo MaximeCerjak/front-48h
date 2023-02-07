@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './components/Home';
+import Dashboard from './components/Dashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import UncontrolledExample from './components/Carousel';
+import AddSignin from './components/AddSignin';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="*" element={<h1>404</h1>} />
+      {/* <Route path="connect" element={<Connect />} */}
+      <Route path="signin" element={<AddSignin />} />
+    </>
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <Header />
-    <App />
+    <RouterProvider router={router} />
     <Footer />
   </React.StrictMode>
 );
