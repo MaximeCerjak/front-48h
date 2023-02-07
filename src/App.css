@@ -136,6 +136,17 @@ button {
   text-decoration: none;
 }
 
+.button-SignUp {
+  background-color: #444a55;
+  color: white;
+  margin: 0 10px;
+}
+
+.button-SignUp1 {
+  color: white;
+  text-decoration: none;
+}
+
 button:hover {
   background-color: #61dafb;
   color: white;
