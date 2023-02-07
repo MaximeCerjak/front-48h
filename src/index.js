@@ -12,6 +12,7 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Connect from './components/Connect';
 import FormSignin from './components/FormSignin';
 
 const router = createBrowserRouter(
