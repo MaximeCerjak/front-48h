@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Connect from './components/Connect';
 import FormSignin from './components/FormSignin';
@@ -31,7 +30,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Header />
     <RouterProvider router={router} />
     <Footer />
   </React.StrictMode>
