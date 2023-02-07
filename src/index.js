@@ -7,12 +7,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import UncontrolledExample from './components/Carousel';
 import AddSignin from './components/Account';
+import Connect from './components/Connect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <AddSignin />
+    <Connect />
     <App />
     <Footer />
   </React.StrictMode>
