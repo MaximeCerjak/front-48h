@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
                         <input type="text" placeholder="Search" className="search-bar"/>
                     </div>
                     <div className="header-right">
-                        <button className="bg-b">Sign in</button>
+                        <Link to="/signin">Signin</Link>
                         <button className="bg-b">Sign up</button>
                     </div>
                 </div>
@@ -27,9 +28,7 @@ const Header = () => {
                     <button className="burger-menu-btn" onClick={handleMenu}>Menu</button>
                     <nav>
                         <ul className="navbar">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <Link to="/"><li>Home</li></Link>
                         </ul>
                     </nav>
                 </div>
