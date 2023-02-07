@@ -25,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="*" element={<NotFoud404 />} />
       <Route path="connect" element={<Connect />} />
       <Route path="signin" element={<FormSignin />} />
+      <Route path="Connect" element={<Connect />} />
       <Route path="cgv" element={<CGV />} />
     </>
   )

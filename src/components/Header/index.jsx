@@ -25,7 +25,7 @@ const Header = () => {
                     </div>
                     <div className="header-right">
                         <button className="button-SignIn"><Link className="button-SignIn1" to="/signin">Sign in</Link></button> 
-                        <button className="bg-b">Sign up</button>
+                        <button className="button-SignUp"><Link className="button-SignUp1" to="/Connect/">Sign Up</Link></button>
                     </div>
                 </div>
                 <div className="header-bottom">
