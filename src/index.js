@@ -23,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="*" element={<h1>404</h1>} />
       <Route path="connect" element={<Connect />} />
       <Route path="signin" element={<FormSignin />} />
+      <Route path="cgv" element={<CGV />} />
     </>
   )
 );
@@ -33,7 +34,6 @@ root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <Footer />
-    <CGV />
   </React.StrictMode>
 );
 
