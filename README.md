@@ -8,7 +8,7 @@ Le site est fonctionnel en partie, il est possible de créer un compte utilisate
 Nous pouvons afficher des articles et les catégories d'article.
 
 
-Pour cela nous avez on eut besoin d'utiliser différentes librairies :
+Pour cela nous avons eut besoin d'utiliser différentes librairies :
 
 - axios : il permet de réaliser les appels api pour récupérer les données et d'en envoyer
 
