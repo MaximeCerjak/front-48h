@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import UncontrolledExample from './components/Carousel';
+import AddSignin from './components/Account';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
+    <AddSignin />
     <App />
     <Footer />
   </React.StrictMode>
