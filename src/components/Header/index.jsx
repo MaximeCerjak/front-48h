@@ -32,7 +32,7 @@ const Header = () => {
                     <button className="burger-menu-btn" onClick={handleMenu}>Menu</button>
                     <nav>
                         <ul className="navbar">
-                            <Link to="/"><li>Home</li></Link>
+                            <h1>Descentral shop</h1>
                         </ul>
                     </nav>
                     <button className="card-btn" onClick={() => setIsOpen(true)}>
