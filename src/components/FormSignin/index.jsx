@@ -81,7 +81,7 @@ const FormSignin = () => {
                     <input id= "password" type="text" value={password} placeholder="Password" onChange={handleChangePassword}/>
                     <input id= "" type="text" value={againPassword} placeholder="Again Password" onChange={handleChangeAgainPassword}/>
                 </div>
-                <button type="submit" value="Send">
+                <button className="button1" type="submit" value="Send">
                     Send
                 </button>
             </form>

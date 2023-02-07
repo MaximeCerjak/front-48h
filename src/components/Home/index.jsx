@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <Header />
             <Carousel images={images}/>
-            <App />
+            {/* <App /> */}
         </div>
     );
 };
