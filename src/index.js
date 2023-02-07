@@ -13,6 +13,7 @@ import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
 import Connect from './components/Connect';
 import FormSignin from './components/FormSignin';
+import CGV from './components/CGV'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,6 +33,7 @@ root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <Footer />
+    <CGV />
   </React.StrictMode>
 );
 
